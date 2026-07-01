@@ -1,0 +1,197 @@
+.footerContent {
+  padding: 80px 0px 0px;
+  background-color: var(--primary);
+  height: 398px;
+}
+
+.footerContentWrapper {
+  display: flex;
+  gap: 217px;
+  justify-content: space-between;
+}
+
+.footerLogo {
+  margin-bottom: 20px;
+}
+
+.footerDescription {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--grey-text);
+  margin-bottom: 20px;
+}
+
+.footerSocialContactTitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 130%;
+  color: var(--white-netral);
+  margin-bottom: 20px;
+}
+
+.footerSocialList {
+  display: flex;
+  gap: 10px;
+}
+
+.footerSocialLink {
+  border-radius: 8px;
+  fill: transparent;
+  border: 1px solid var(--white-14);
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fbIcon {
+  width: 8px;
+  height: 14px;
+  fill: var(--secondary);
+}
+
+.xIcon {
+  width: 13px;
+  height: 12px;
+  fill: var(--secondary);
+}
+
+.instagramIcon {
+  width: 14px;
+  height: 14px;
+  fill: var(--secondary);
+}
+
+.youtubeIcon {
+  width: 14px;
+  height: 10px;
+  fill: var(--secondary);
+}
+
+.footerMenu {
+  display: flex;
+  gap: 70px;
+}
+
+.footerMenuTitle {
+  white-space: nowrap;
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: var(--white-netral);
+  white-space: nowrap;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footerMenuTitle::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: var(--secondary);
+  bottom: -20px;
+}
+
+.footerMenuList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footerMenuItem {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: var(--grey-text);
+  white-space: nowrap;
+}
+
+.footerMenuContactList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerMenuContactWrapper {
+  display: flex;
+  gap: 12px;
+}
+
+.wrapperIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  fill: transparent;
+  border: 1px solid var(--white-netral);
+  width: 42px;
+  height: 42px;
+}
+
+.phoneIcon {
+  fill: var(--white-netral);
+  width: 22px;
+  height: 18px;
+}
+
+.emailIcon {
+  fill: var(--white-netral);
+  width: 21px;
+  height: 22px;
+}
+
+.chatIcon {
+  fill: var(--white-netral);
+  width: 22px;
+  height: 19px;
+}
+
+.footerMenuContactTitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  color: var(--grey-text);
+}
+
+.footerMenuContactDescription {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 130%;
+  color: var(--white-netral);
+}
+
+.footerBottom {
+  padding: 20px 0px;
+  background: linear-gradient(90deg, #4caf50 20%, #2196f3 100%);
+  height: 86px;
+}
+
+.footerBottomContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerCopyright {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  color: var(--white-netral);
+}
+
+.footerNavigation {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

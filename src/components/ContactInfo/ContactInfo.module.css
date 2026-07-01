@@ -1,0 +1,55 @@
+.contactList {
+  display: flex;
+  gap: 20px;
+}
+
+.contactList li:nth-child(1) {
+  border-right: 1px dashed var(--white-31);
+  padding-right: 20px;
+}
+
+.contactList li {
+  display: flex;
+  gap: 20px;
+}
+
+.iconWrap {
+  border-radius: 8px;
+  width: 54px;
+  height: 54px;
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phoneIcon {
+  fill: var(--white-netral);
+  width: 27px;
+  height: 22px;
+}
+
+.emailIcon {
+  fill: var(--white-netral);
+  width: 26px;
+  height: 26px;
+}
+
+.contactTitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 130%;
+  color: var(--grey-text);
+  margin-bottom: 5px;
+}
+
+.contactNumber,
+.contactEmail {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: var(--white-netral);
+}

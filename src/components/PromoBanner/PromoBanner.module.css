@@ -1,0 +1,83 @@
+.sectionWrapper {
+  position: relative;
+  background: url('/images/bg/bgPromoBanner.webp') center/cover no-repeat;
+  padding: 128px 0px;
+}
+
+.sectionWrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(150deg, #262626 30%, rgba(38, 38, 38, 0.31) 100%);
+
+  opacity: 0.7;
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 39px;
+  line-height: 115%;
+  letter-spacing: -0.03em;
+  color: var(--white-netral);
+  margin-bottom: 20px;
+}
+
+.description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--grey-text);
+  margin-bottom: 40px;
+}
+
+.btnViewService {
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 170px;
+  height: 42px;
+  background-color: var(--accent);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--white-netral);
+}
+
+.btnWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnPlay {
+  border-radius: 45px;
+  background-color: var(--white-netral);
+  box-shadow: 0 0 60px -10px rgba(0, 0, 0, 0.25);
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playIcon {
+  fill: var(--secondary);
+  width: 23px;
+  height: 31px;
+}

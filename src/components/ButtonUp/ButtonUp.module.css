@@ -1,0 +1,15 @@
+.buttonUp {
+  border: 1px solid var(--white-20);
+  border-radius: 22px;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upArrowIcon {
+  width: 15px;
+  height: 15px;
+  fill: var(--white-netral);
+}

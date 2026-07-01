@@ -1,0 +1,27 @@
+.navigationFooterList {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+.navigationFooterItem {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  text-align: right;
+  color: var(--white-netral);
+}
+
+.navigationFooterItem::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background-color: var(--white-250);
+  margin-left: 19px;
+}
+
+.navigationFooterItem:last-child::after {
+  display: none;
+}

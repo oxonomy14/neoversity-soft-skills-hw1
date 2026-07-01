@@ -1,0 +1,35 @@
+.button {
+  border: 1px solid var(--white-netral);
+  border-radius: 8px;
+  padding: 13px 25px;
+  width: 155px;
+  height: 44px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--white-netral);
+  display: flex;
+  gap: 7px;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.rightArrowIcon {
+  fill: var(--white-netral);
+  width: 15px;
+  height: 11px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--white-netral);
+  color: var(--bg-green);
+}
+
+.button:hover .rightArrowIcon,
+.button:focus .rightArrowIcon {
+  fill: var(--bg-green);
+}

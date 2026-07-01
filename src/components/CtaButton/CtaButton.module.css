@@ -1,0 +1,22 @@
+.ctaButton {
+  display: inline-flex;
+  border-radius: 8px;
+  padding: 15px 25px;
+
+  height: 48px;
+  background-color: var(--accent);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--white-netral);
+}
+
+.ctaButton:hover,
+.ctaButton:focus {
+  background-color: var(--bg-green);
+}
+
+

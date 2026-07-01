@@ -1,0 +1,57 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1000;
+}
+
+.modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 600px;
+
+  padding: 60px;
+
+  border-radius: 24px;
+  background: var(--white-netral);
+
+  text-align: center;
+}
+
+.modalButton {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 153px;
+  height: 42px;
+
+  cursor: pointer;
+
+  background-color: var(--accent);
+  color: var(--white-netral);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 20px;
+}
+
+.video {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}

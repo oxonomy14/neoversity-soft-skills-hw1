@@ -1,0 +1,117 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1000;
+}
+
+.modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 600px;
+
+  padding: 60px;
+
+  border-radius: 24px;
+  background: var(--white-netral);
+
+  text-align: center;
+}
+
+.modalTitle {
+  margin-bottom: 32px;
+
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.modalText {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+
+.modalText2 {
+  margin-bottom: 32px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.socialBtnWrapper {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.socialBtnTelegrem {
+  border-radius: 8px;
+  padding: 12px 24px;
+
+  background: var(--accent);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--white-netral);
+}
+
+.socialBtnWhatsApp {
+  border-radius: 8px;
+  padding: 12px 24px;
+
+  background: var(--secondary);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--white-netral);
+}
+
+.socialBtnDisabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.modalButton {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 153px;
+  height: 42px;
+
+  cursor: pointer;
+
+  background-color: var(--accent);
+  color: var(--white-netral);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 20px;
+}

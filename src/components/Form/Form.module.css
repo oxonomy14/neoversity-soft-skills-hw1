@@ -1,0 +1,194 @@
+.formContainer {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: auto auto;
+  margin-bottom: 15px;
+}
+
+.gridItemTextarea {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.attantionWrapper {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.inputForm {
+  border: 1px solid var(--bg-light);
+  border-radius: 8px;
+  padding: 12px 20px;
+  width: 244px;
+  height: 50px;
+  max-width: 244px;
+  background-color: transparent;
+  transition: border-color 250ms ease;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--text-480);
+}
+
+.selectForm {
+  border: 1px solid var(--bg-light);
+  border-radius: 8px;
+  padding: 12px 20px;
+  width: 244px;
+  height: 50px;
+  max-width: 244px;
+  background-color: transparent;
+  transition: border-color 250ms ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--text-480);
+}
+
+.textareaForm {
+  border: 1px solid var(--bg-light);
+  border-radius: 8px;
+  padding: 12px 20px;
+  width: 504px;
+  height: 120px;
+  resize: none;
+  background-color: transparent;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--text-480);
+}
+
+.labelForm {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: color 150ms ease-in-out;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  color: var(--primary);
+}
+
+.inputForm::placeholder,
+.textareaForm::placeholder {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--text-480);
+  transition: color 250ms ease;
+}
+
+.inputForm:hover::placeholder,
+.inputForm:focus::placeholder,
+.textareaForm:hover::placeholder,
+.textareaForm:focus::placeholder,
+.selectForm:hover::placeholder,
+.selectForm:focus::placeholder {
+  color: var(--border-divider);
+}
+
+.inputForm:hover,
+.inputForm:focus,
+.textareaForm:hover,
+.textareaForm:focus {
+  border-color: var(--border-divider);
+  outline: none;
+}
+
+.phoneInput {
+  border: 1px solid var(--bg-light);
+  border-radius: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 16px;
+  width: 244px;
+  height: 50px;
+  max-width: 244px;
+  background-color: transparent;
+  transition: border-color 250ms ease;
+  display: flex;
+  align-items: center;
+}
+
+.phoneInput :global(.PhoneInputInput) {
+  border: none;
+  outline: none;
+  background: transparent;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--text-480);
+}
+
+.phoneInput :global(.PhoneInputInput)::placeholder {
+  color: var(--text-480);
+}
+
+.phoneInput :global(.PhoneInputCountrySelect) {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.phoneInput:hover,
+.phoneInput:focus-within {
+  border-color: var(--border-divider);
+}
+
+.selectForm:hover,
+.selectForm:focus {
+  border-color: var(--border-divider);
+  color: var(--border-divider);
+  outline: none;
+}
+
+.labelForm:focus-within {
+  color: var(--border-divider);
+}
+
+.attantionText {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 162%;
+  color: var(--grey-text);
+  padding: 0px 8px;
+}
+
+.error {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 162%;
+  color: var(--error);
+  padding: 8px 8px;
+}
+
+.btnForm {
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 504px;
+  height: 42px;
+  background-color: var(--accent);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--white-netral);
+}

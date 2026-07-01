@@ -1,0 +1,139 @@
+.aboutUsContent {
+  padding: 112px 0 96px;
+  display: flex;
+  align-items: center;
+}
+
+.imageWrapperLeft {
+  margin-right: 20px;
+  width: 261px;
+  height: 420px;
+  position: relative;
+}
+
+.imageWrapperLeft img {
+  border-radius: 8px;
+}
+
+.imageLeftText {
+  border-radius: 5px;
+  padding: 14px 25px 18px;
+  width: 222px;
+  height: 120px;
+  background-color: var(--white-netral);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  left: 19.5px;
+}
+
+.imageLeftText span {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 61px;
+  line-height: 112%;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--secondary);
+}
+
+.imageLeftText p {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--text);
+}
+
+.imageWrapperRight {
+  margin-right: 80px;
+}
+
+.imageWrapperRight img {
+  border-radius: 8px;
+}
+
+.textWrapper {
+  padding: 13.25px 0px;
+}
+
+.whoWeAre {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: linear-gradient(179deg, #4caf50 20%, #2196f3 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.aboutUsTitle {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 39px;
+  line-height: 115%;
+  letter-spacing: -0.03em;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.aboutUsDescription {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.aboutUsFeatures {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 7.5px 25px;
+  margin-bottom: 30px;
+}
+
+.aboutUsFeature {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.aboutUsFeature::before {
+  content: '';
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  background-image: url('/icons/check.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.trustedBy {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-divider);
+  margin-bottom: 20px;
+}
+
+.trustedByText {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: var(--primary);
+}

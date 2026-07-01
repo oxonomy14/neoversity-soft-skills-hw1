@@ -1,0 +1,22 @@
+.header {
+  background-color: var(--white-netral);
+  height: 115px;
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  padding: 18.5px 8px 17.5px;
+}
+
+.headerBottom {
+  background: linear-gradient(175deg, #2196f3 30%, #4caf50 85%);
+  border-radius: 8px;
+  padding: 18px 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}

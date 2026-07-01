@@ -1,0 +1,12 @@
+.navigationList {
+  display: flex;
+  gap: 44px;
+}
+
+.navigationList li {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 130%;
+  color: var(--white-netral);
+}
