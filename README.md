@@ -1,5 +1,11 @@
 # DevForge
 
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
+![CSS Modules](https://img.shields.io/badge/CSS-Modules-blue)
+![License](https://img.shields.io/badge/license-Educational-green)
+
 > Learning. Building. Growing Together.
 
 DevForge is a fictional software engineering team website created as part of the Neoversity Software Engineering program.
