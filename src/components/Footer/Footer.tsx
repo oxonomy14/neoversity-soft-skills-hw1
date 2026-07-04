@@ -130,7 +130,7 @@ export default function Footer() {
                       </div>
                       <div>
                         <p className={css.footerMenuContactTitle}>
-                          Call Center
+                          Team Contact
                         </p>
                         <p className={css.footerMenuContactDescription}>
                           +66 (80) 567-89-10
