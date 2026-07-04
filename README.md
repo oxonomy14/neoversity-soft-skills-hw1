@@ -1,36 +1,151 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevForge
+
+> Learning. Building. Growing Together.
+
+DevForge is a fictional software engineering team website created as part of the Neoversity Software Engineering program.
+
+The project showcases a modern landing page with information about the team, individual members, technical skills, collaboration values, and future goals.
+
+---
+
+## Preview
+
+![DevForge Preview](./public/images/ogImage/ogMainEn.webp)
+
+---
+
+## Features
+
+- Modern responsive landing page
+- Team members section with interactive modal windows
+- Skills & superpowers presentation
+- Future roadmap section
+- Reusable React components
+- Semantic HTML
+- CSS Modules
+- Smooth scrolling navigation
+- SEO optimized metadata
+- Open Graph support
+- Fully responsive layout
+
+---
+
+## Built With
+
+- Next.js
+- React
+- TypeScript
+- CSS Modules
+- Open Sans
+- Montserrat
+
+---
+
+## Project Structure
+
+```
+src/
+│
+├── app/
+├── components/
+├── data/
+├── styles/
+├── types/
+└── public/
+```
+
+---
+
+## Sections
+
+- Hero
+- About Team
+- Team Members
+- Superpowers
+- Future Vision
+- Footer
+
+---
+
+## Team Member Cards
+
+Each team member includes:
+
+- Profile photo
+- Personal story
+- Experience
+- Technical skills
+- Future goals
+- GitHub
+- LinkedIn
+- Interactive modal window
+
+---
+
+## SEO
+
+The project includes
+
+- Open Graph metadata
+- Twitter Cards
+- Canonical URLs
+- Favicon
+- Responsive images
+
+---
+
+## Responsive
+
+Optimized for
+
+- Desktop
+- Tablet
+- Mobile
+
+---
 
 ## Getting Started
 
-First, run the development server:
+Clone repository
+
+```bash
+git clone https://github.com/oxonomy14/neoversity-soft-skills-hw1.git
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build production version
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Author
 
-To learn more about Next.js, take a look at the following resources:
+**Andrii Semenenko**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Frontend Developer
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+GitHub:
+https://github.com/oxonomy14
 
-## Deploy on Vercel
+LinkedIn:
+https://www.linkedin.com/in/andriisemenenko
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project was created for educational purposes as part of the **Neoversity Software Engineering Program**.

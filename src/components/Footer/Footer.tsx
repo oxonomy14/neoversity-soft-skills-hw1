@@ -146,9 +146,7 @@ export default function Footer() {
                         </svg>
                       </div>
                       <div>
-                        <p className={css.footerMenuContactTitle}>
-                          Email Support
-                        </p>
+                        <p className={css.footerMenuContactTitle}>Email</p>
                         <p className={css.footerMenuContactDescription}>
                           hello@devforge.demo
                         </p>
