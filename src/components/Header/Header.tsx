@@ -1,4 +1,3 @@
-import ContactHeader from '../ContactHeader/ContactHeader';
 import Container from '../Container/Container';
 import Logo from '../Logo/Logo';
 import css from './Header.module.css';
@@ -12,7 +11,6 @@ export default function Header() {
         <div className={css.headerWrapper}>
           <div className={css.headerTop}>
             <Logo />
-            <ContactHeader />
           </div>
           <div className={css.headerBottom}>
             <Navigation />

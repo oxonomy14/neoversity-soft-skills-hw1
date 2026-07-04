@@ -13,19 +13,21 @@ export default function Footer() {
           <div className={css.footerContentWrapper}>
             <div>
               <Image
-                src="/logoColor.png"
-                alt="Goodust Logo"
+                src="/logoFooter.webp"
+                alt="DevForge Logo"
                 width={178}
                 height={38}
                 className={css.footerLogo}
               />
               <p className={css.footerDescription}>
-                Professional cleaning solutions designed to give you more time
-                for what matters most. From routine housekeeping to deep
-                cleaning services, Goodust delivers exceptional results with
-                care and consistency.
+                DevForge is a community of aspiring software engineers learning
+                at the Neoversity, building, and growing together. Through
+                collaboration, real projects, and continuous practice, we turn
+                knowledge into experience and prepare for successful careers in
+                tech.
               </p>
-              <p className={css.footerSocialContactTitle}>Connect with us</p>
+              <p className={css.footerSocialContactTitle}>Follow Our Journey</p>
+
               <ul className={css.footerSocialList}>
                 <li className={css.footerSocialItem}>
                   <Link
@@ -83,40 +85,35 @@ export default function Footer() {
 
                 <ul className={css.footerMenuList}>
                   <li className={css.footerMenuItem}>
-                    <Link href="/privacy-polocy">Privacy Policy</Link>
+                    <Link href="/">Privacy Policy</Link>
                   </li>
                   <li className={css.footerMenuItem}>
-                    <Link href="/terms-conditions">Terms & Conditions</Link>
+                    <Link href="/">Terms & Conditions</Link>
                   </li>
                   <li className={css.footerMenuItem}>
-                    <Link href="/#faq">FAQ`s</Link>
+                    <Link href="/">Cookie Policy</Link>
                   </li>
-                  <li className={css.footerMenuItem}>
-                    <Link href="/disclaimer">Disclaimer</Link>
-                  </li>
+
                   <li className={css.footerMenuItem}>
                     <Link href="/blog">Blog</Link>
                   </li>
                 </ul>
               </div>
               <div>
-                <h3 className={css.footerMenuTitle}>Company</h3>
+                <h3 className={css.footerMenuTitle}>DevForge</h3>
 
                 <ul className={css.footerMenuList}>
                   <li className={css.footerMenuItem}>
-                    <Link href="/about-us">About Us</Link>
+                    <Link href="/#about-team">About Team</Link>
                   </li>
                   <li className={css.footerMenuItem}>
-                    <Link href="/">Our Contact</Link>
+                    <Link href="/#team-members">Team Members</Link>
                   </li>
                   <li className={css.footerMenuItem}>
-                    <Link href="/#service">Services</Link>
+                    <Link href="/#team-superpowers">Team Superpowers</Link>
                   </li>
                   <li className={css.footerMenuItem}>
-                    <Link href="/#book-appointment">Appointment</Link>
-                  </li>
-                  <li className={css.footerMenuItem}>
-                    <Link href="/">Pricing</Link>
+                    <Link href="/#future-vision">Future Vision</Link>
                   </li>
                 </ul>
               </div>
@@ -153,7 +150,7 @@ export default function Footer() {
                           Email Support
                         </p>
                         <p className={css.footerMenuContactDescription}>
-                          hello@goodust.co.th
+                          hello@devforge.demo
                         </p>
                       </div>
                     </div>
@@ -183,15 +180,8 @@ export default function Footer() {
         <Container>
           <div className={css.footerBottomContent}>
             <p className={css.footerCopyright}>
-              Copyright &copy; {new Date().getFullYear()} Goodust by
-              <Link
-                href="https://andriiweb.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span> andriiweb.dev</span>
-              </Link>{' '}
-              All rights reserved.
+              &copy; {new Date().getFullYear()} DevForge - Learning. Building.
+              Growing Together.
             </p>
             <div className={css.footerNavigation}>
               <NavigationFooter />

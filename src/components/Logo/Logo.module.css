@@ -1,0 +1,8 @@
+.logoText {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 115%;
+  letter-spacing: -0.03em;
+  color: var(--primary);
+}

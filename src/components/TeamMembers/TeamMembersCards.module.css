@@ -1,0 +1,111 @@
+.serviceItem {
+  width: calc((100%-60px) / 3);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.serviceItem:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.imageWrapper {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.itemWrapper {
+  border-bottom: 3px solid var(--secondary);
+  border-radius: 10px;
+  padding: 5px 5px 8px;
+  width: 410px;
+  height: 100%;
+  box-shadow: 0 5px 30px -10px rgba(0, 0, 0, 0.2);
+  background-color: var(--white-netral);
+}
+
+.imageWrapper {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+.memberBadge {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 16px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #2196f3 0%, #4caf50 100%);
+  color: #fff;
+
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+
+  box-shadow: 0 8px 20px rgba(33, 150, 243, 0.25);
+}
+
+.image {
+  transition: transform 0.5s ease;
+  width: 400px;
+
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.serviceItem:hover .image {
+  transform: scale(1.08);
+}
+
+.serviceItem:hover .iconItem {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.content {
+  padding: 32px 30px 25px;
+  position: relative;
+}
+
+.title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--text);
+  margin-bottom: 25px;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 150px;
+  height: 42px;
+  background-color: var(--accent);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--white-netral);
+}

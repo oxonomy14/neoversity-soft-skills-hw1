@@ -1,8 +1,6 @@
 import css from './Hero.module.css';
 import Container from '../Container/Container';
-import Image from 'next/image';
-
-import CtaButton from '../CtaButton/CtaButton';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -10,26 +8,22 @@ export default function Hero() {
       <Container>
         <div className={css.heroContent}>
           <div className={css.heroText}>
-            <p className={css.subTitle}># From Dusty to Dazzling</p>
+            <p className={css.subTitle}>
+              # Learning together. Growing together.
+            </p>
             <h1 className={css.title}>
-              Bringing <span className={css.highlight}>Sparkle</span> Back to
-              Your Home
+              Forging <span className={css.highlight}>Ideas</span> Into Reality
             </h1>
             <p className={css.description}>
-              Experience professional cleaning services designed to keep your
-              home fresh, spotless, and welcoming. Reliable cleaners, flexible
-              scheduling, and results you will love.
+              We are DevForge — a team of aspiring software engineers united by
+              curiosity, collaboration, and a passion for building meaningful
+              products. Every project is another step toward becoming better
+              developers.
             </p>
-            <CtaButton text="Book an Appointment" path="#book-appointment" />
-          </div>
 
-          <div className={css.heroImage}>
-            <Image
-              src="/images/hero/teamCleaning.webp"
-              alt="Hero Image"
-              width={669}
-              height={720}
-            />
+            <Link href="/#team-members" className={css.btn}>
+              Meet Our Team
+            </Link>
           </div>
         </div>
       </Container>

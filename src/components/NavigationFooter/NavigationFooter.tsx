@@ -6,13 +6,13 @@ export default function NavigationFooter() {
     <nav className={css.navigationFooter}>
       <ul className={css.navigationFooterList}>
         <li className={css.navigationFooterItem}>
-          <Link href="/terms-conditions">Terms & Conditions</Link>
+          <Link href="/">Terms & Conditions</Link>
         </li>
         <li className={css.navigationFooterItem}>
-          <Link href="/privacy-policy">Privacy Policy</Link>
+          <Link href="/">Privacy Policy</Link>
         </li>
         <li className={css.navigationFooterItem}>
-          <Link href="/cookie-policy">Cookie Policy</Link>
+          <Link href="/">Cookie Policy</Link>
         </li>
       </ul>
     </nav>

@@ -13,22 +13,21 @@ export default function PromoBanner() {
       <Container>
         <div className={css.contentWrapper}>
           <div className={css.content}>
-            <h2 className={css.title}>
-              Trusted Cleaning Solutions for Every Space
-            </h2>
+            <h2 className={css.title}>Building More Than Code</h2>
             <p className={css.description}>
-              From home cleaning and office maintenance to deep cleaning
-              services, our experienced team provides dependable, high-quality
-              cleaning solutions designed to keep your space fresh, organized,
-              and welcoming year-round.
+              At DevForge, we believe that great software starts with great
+              people. Every challenge, collaboration, and late-night debugging
+              session helps us grow—not only as developers but also as
+              teammates. This project reflects our journey, our shared
+              ambitions, and the future we're building together.
             </p>
-            <Link className={css.btnViewService} href="#service">
-              View Our Service
-            </Link>
+            {/*      <Link className={css.btnViewService} href="#">
+            Discover Our Journey
+            </Link> */}
           </div>
           <div className={css.btnWrapper}>
             <button
-              onClick={() => setIsVideoOpen(true)}
+              onClick={() => alert('Video modal is not implemented yet.')}
               className={css.btnPlay}
             >
               <svg className={css.playIcon}>

@@ -6,7 +6,7 @@ export default function Logo() {
   return (
     <div className={css.logo}>
       <Link href="/">
-        <Image src="/logo.png" alt="Logo" width={178} height={38} />
+        <Image src="/logoHeader.webp" alt="Logo" width={178} height={38} />
       </Link>
     </div>
   );
