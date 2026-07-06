@@ -5,7 +5,9 @@
 
 .headerTop {
   display: flex;
+
   justify-content: space-between;
+  align-items: center;
   padding: 18.5px 8px 17.5px;
 }
 
@@ -17,6 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   position: relative;
   z-index: 1;
 }

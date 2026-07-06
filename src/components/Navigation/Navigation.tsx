@@ -1,24 +1,39 @@
+import { LocaleProps } from '@/types/types';
 import css from './Navigation.module.css';
 import Link from 'next/link';
 
-export default function Navigation() {
+type NavigationProps = {
+  locale: LocaleProps['locale'];
+  data: {
+    home: string;
+    aboutTeam: string;
+    teamMembers: string;
+    teamSuperpowers: string;
+    futureVision: string;
+  };
+};
+
+export default function Navigation({ data, locale }: NavigationProps) {
+  const prefix = locale === 'uk' ? 'uk' : '';
   return (
     <nav className={css.navigation}>
       <ul className={css.navigationList}>
         <li>
-          <Link href="/">Home</Link>
+          <Link href={`/${prefix}`}> {data.home} </Link>
         </li>
         <li>
-          <Link href="/#about-team">About Team</Link>
+          <Link href={`/${prefix}#about-team`}> {data.aboutTeam} </Link>
         </li>
         <li>
-          <Link href="/#team-members">Team Members</Link>
+          <Link href={`/${prefix}#team-members`}> {data.teamMembers} </Link>
         </li>
         <li>
-          <Link href="/#team-superpowers">Team Superpowers</Link>
+          <Link href={`/${prefix}#team-superpowers`}>
+            {data.teamSuperpowers}
+          </Link>
         </li>
         <li>
-          <Link href="/#future-vision">Future Vision</Link>
+          <Link href={`/${prefix}#future-vision`}> {data.futureVision} </Link>
         </li>
       </ul>
     </nav>

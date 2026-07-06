@@ -3,8 +3,13 @@ import Container from '../Container/Container';
 import { useState } from 'react';
 import css from './TeamMembers.module.css';
 import TeamMembersItems from '@/components/TeamMembersItems/TeamMembersItems';
+import type { TeamMember } from '@/types/teamMember.types';
 
-export default function TeamMembers() {
+export default function TeamMembers({
+  cardMembers,
+}: {
+  cardMembers: TeamMember[];
+}) {
   const [activeId, setActiveId] = useState<number | null>(null);
 
   const openModal = (id: number) => {
@@ -37,6 +42,7 @@ export default function TeamMembers() {
             activeId={activeId}
             openModal={openModal}
             closeModal={closeModal}
+            cardMembers={cardMembers}
           />
         </Container>
       </section>

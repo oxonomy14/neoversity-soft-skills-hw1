@@ -1,7 +1,7 @@
 import LayoutShell from '@/components/LayoutShell/LayoutShell';
-
+import { getDictionary } from '@/lib/getDictionary';
 import Hero from '@/components/Hero/Hero';
-import AboutUs from '@/components/AboutUs/AboutUs';
+import AboutTeam from '@/components/AboutTeam/AboutTeam';
 
 import PromoBanner from '@/components/PromoBanner/PromoBanner';
 import TeamMembers from '@/components/TeamMembers/TeamMembers';
@@ -19,6 +19,10 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: '/',
+    languages: {
+      en: '/',
+      uk: '/uk',
+    },
   },
 
   openGraph: {
@@ -45,12 +49,13 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const dictionary = getDictionary('en');
   return (
-    <LayoutShell>
-      <Hero />
-      <AboutUs />
+    <LayoutShell locale="en">
+      <Hero data={dictionary.hero} locale="en" />
+      <AboutTeam />
       <PromoBanner />
-      <TeamMembers />
+      <TeamMembers cardMembers={dictionary.cardMembers} />
       <Superpowers />
       <Future />
     </LayoutShell>

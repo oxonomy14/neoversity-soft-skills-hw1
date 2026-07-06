@@ -2,7 +2,7 @@
   border: 1px solid var(--white-netral);
   border-radius: 8px;
   padding: 13px 25px;
-  width: 155px;
+
   height: 44px;
   font-family: var(--font-family);
   font-weight: 600;
@@ -11,7 +11,7 @@
   text-transform: capitalize;
   text-align: center;
   color: var(--white-netral);
-  display: flex;
+  display: inline-flex;
   gap: 7px;
   white-space: nowrap;
   align-items: center;

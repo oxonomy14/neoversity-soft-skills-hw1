@@ -1,9 +1,9 @@
-import css from './AboutUs.module.css';
+import css from './AboutTeam.module.css';
 import Container from '../Container/Container';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function AboutUs() {
+export default function AboutTeam() {
   return (
     <section className={css.aboutUs} id="about-team">
       <Container>

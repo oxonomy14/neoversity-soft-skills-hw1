@@ -1,28 +1,37 @@
 import css from './Hero.module.css';
 import Container from '../Container/Container';
 import Link from 'next/link';
+import type { LocaleProps } from '@/types/types';
 
-export default function Hero() {
+type HeroProps = {
+  locale: LocaleProps['locale'];
+  data: {
+    titleBefore: string;
+    titleHighlight: string;
+    titleAfter: string;
+    subtitle: string;
+    description: string;
+    button: string;
+  };
+};
+
+export default function Hero({ data, locale }: HeroProps) {
+  const prefix = locale === 'uk' ? 'uk' : '';
   return (
     <section className={css.hero}>
       <Container>
         <div className={css.heroContent}>
           <div className={css.heroText}>
-            <p className={css.subTitle}>
-              # Learning together. Growing together.
-            </p>
+            <p className={css.subTitle}>{data.subtitle}</p>
             <h1 className={css.title}>
-              Forging <span className={css.highlight}>Ideas</span> Into Reality
+              {data.titleBefore}{' '}
+              <span className={css.highlight}>{data.titleHighlight}</span>{' '}
+              {data.titleAfter}
             </h1>
-            <p className={css.description}>
-              We are DevForge — a team of aspiring software engineers united by
-              curiosity, collaboration, and a passion for building meaningful
-              products. Every project is another step toward becoming better
-              developers.
-            </p>
+            <p className={css.description}>{data.description}</p>
 
-            <Link href="/#team-members" className={css.btn}>
-              Meet Our Team
+            <Link href={`/${prefix}#team-members`} className={css.btn}>
+              {data.button}
             </Link>
           </div>
         </div>

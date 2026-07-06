@@ -1,19 +1,21 @@
 'use client';
 
-import type { ReactNode } from 'react';
+
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import type { LocaleProps } from '@/types/types';
 
 type LayoutShellProps = {
-  children: ReactNode;
+  children: React.ReactNode;
+  locale: LocaleProps['locale'];
 };
 
-export default function LayoutShell({ children }: LayoutShellProps) {
+export default function LayoutShell({ children, locale }: LayoutShellProps) {
   return (
     <>
-      <Header />
+      <Header locale={locale} />
       <main>{children}</main>
-      <Footer />
+      <Footer  />
     </>
   );
 }
