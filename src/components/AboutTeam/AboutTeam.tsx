@@ -2,8 +2,27 @@ import css from './AboutTeam.module.css';
 import Container from '../Container/Container';
 import Image from 'next/image';
 import Link from 'next/link';
+import type { LocaleProps } from '@/types/types';
 
-export default function AboutTeam() {
+type AboutTeamProps = {
+  locale: LocaleProps['locale'];
+  data: {
+    imageLeftText: string;
+    imageLeftText2: string;
+    title: string;
+    subTitle: string;
+    description: string;
+    description2: string;
+    button: string;
+    aboutUsFeature: string;
+    aboutUsFeature2: string;
+    aboutUsFeature3: string;
+    aboutUsFeature4: string;
+  };
+};
+
+export default function AboutTeam({ data, locale }: AboutTeamProps) {
+  const prefix = locale === 'uk' ? 'uk' : '';
   return (
     <section className={css.aboutUs} id="about-team">
       <Container>
@@ -16,8 +35,8 @@ export default function AboutTeam() {
               alt="About Team"
             />
             <div className={css.imageLeftText}>
-              <span>2026</span>
-              <p>Our Journey Began</p>
+              <span>{data.imageLeftText}</span>
+              <p>{data.imageLeftText2}</p>
             </div>
           </div>
           <div className={css.imageWrapperRight}>
@@ -29,32 +48,18 @@ export default function AboutTeam() {
             />
           </div>
           <div className={css.textWrapper}>
-            <p className={css.whoWeAre}>[ Who We Are ]</p>
-            <h2 className={css.aboutUsTitle}>
-              Every Great Team - Starts With A Story
-            </h2>
-            <p className={css.aboutUsDescription}>
-              DevForge is a student team's of aspiring software engineers
-              brought together by Neoversity. Although we come from different
-              backgrounds, we share the same ambition—to learn, collaborate, and
-              build meaningful digital products. This project tells the story of
-              who we are, what drives us, and how we're growing together as a
-              team.
-            </p>
-            <p className={css.aboutUsDescription}>
-              Each team member contributes unique skills, experiences, and
-              perspectives. Together, we're building more than software—we're
-              building trust, friendships, and the foundation for our future
-              careers in tech.
-            </p>
+            <p className={css.whoWeAre}>[ {data.subTitle} ]</p>
+            <h2 className={css.aboutUsTitle}>{data.title}</h2>
+            <p className={css.aboutUsDescription}>{data.description}</p>
+            <p className={css.aboutUsDescription}>{data.description2}</p>
             <ul className={css.aboutUsFeatures}>
-              <li className={css.aboutUsFeature}>Diverse Backgrounds</li>
-              <li className={css.aboutUsFeature}>Collaborative Mindset</li>
-              <li className={css.aboutUsFeature}>Continuous Learning</li>
-              <li className={css.aboutUsFeature}>Problem Solving</li>
+              <li className={css.aboutUsFeature}>{data.aboutUsFeature}</li>
+              <li className={css.aboutUsFeature}>{data.aboutUsFeature2}</li>
+              <li className={css.aboutUsFeature}>{data.aboutUsFeature3}</li>
+              <li className={css.aboutUsFeature}>{data.aboutUsFeature4}</li>
             </ul>
-            <Link className={css.btn} href="/#team-members">
-              Meet the Team
+            <Link className={css.btn} href={`/${prefix}#team-members`}>
+              {data.button}
             </Link>
           </div>
         </div>

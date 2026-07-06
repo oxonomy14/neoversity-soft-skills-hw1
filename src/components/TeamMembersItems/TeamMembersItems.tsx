@@ -10,6 +10,7 @@ type Props = {
   openModal: (id: number) => void;
   closeModal: () => void;
   cardMembers: TeamMember[];
+  titleBtn: string;
 };
 
 export default function TeamMembersItems({
@@ -17,6 +18,7 @@ export default function TeamMembersItems({
   openModal,
   closeModal,
   cardMembers,
+  titleBtn,
 }: Props) {
   const selectedMember = cardMembers.find((member) => member.id === activeId);
   return (
@@ -27,6 +29,7 @@ export default function TeamMembersItems({
             member={member}
             key={member.id}
             openModal={openModal}
+            titleBtn={titleBtn}
           />
         ))}
       </ul>

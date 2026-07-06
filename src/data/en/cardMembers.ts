@@ -35,7 +35,7 @@ export const cardMembers = [
     id: 2,
     slug: 'nazarii-yankoshchuk',
     name: 'Nazarii Yankoshchuk ',
-    role: 'Front-End Development',
+    role: 'Frontend Developer',
 
     image: 'nyDevForge.webp',
 
@@ -56,7 +56,7 @@ export const cardMembers = [
     superpower:
       'I adapt to different conditions, I learn quickly, I communicate well',
 
-    canHelp: 'Front-End Development, Project Management',
+    canHelp: 'Frontend Developer, Project Management',
 
     future:
       'After completing my studies, I see myself working in a large IT company in Italy or Ukraine, where I can develop as a Front-end Developer and work on large-scale projects.',

@@ -53,9 +53,12 @@ export default function Home() {
   return (
     <LayoutShell locale="en">
       <Hero data={dictionary.hero} locale="en" />
-      <AboutTeam />
-      <PromoBanner />
-      <TeamMembers cardMembers={dictionary.cardMembers} />
+      <AboutTeam data={dictionary.aboutTeam} locale="en" />
+      <PromoBanner data={dictionary.promoBanner} />
+      <TeamMembers
+        cardMembers={dictionary.cardMembers}
+        data={dictionary.teamMembers}
+      />
       <Superpowers />
       <Future />
     </LayoutShell>

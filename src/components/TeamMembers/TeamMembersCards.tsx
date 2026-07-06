@@ -2,12 +2,17 @@ import css from './TeamMembersCards.module.css';
 import Image from 'next/image';
 import { TeamMember } from '@/types/teamMember.types';
 
-type Props = {
+type TeamMembersCardsProps = {
   member: TeamMember;
   openModal: (id: number) => void;
+  titleBtn: string;
 };
 
-export default function TeamMembersCards({ member, openModal }: Props) {
+export default function TeamMembersCards({
+  member,
+  openModal,
+  titleBtn,
+}: TeamMembersCardsProps) {
   return (
     <>
       <li className={css.serviceItem} key={member.id}>
@@ -28,7 +33,7 @@ export default function TeamMembersCards({ member, openModal }: Props) {
             <p className={css.description}>{member.shortDescription}</p>
 
             <button className={css.btn} onClick={() => openModal(member.id)}>
-              View Profile
+              {titleBtn}
             </button>
           </div>
         </div>
