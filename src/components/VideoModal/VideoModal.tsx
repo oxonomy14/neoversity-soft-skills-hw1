@@ -36,7 +36,7 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
 
         <video className={css.video} controls autoPlay playsInline>
           <source
-            src="https://res.cloudinary.com/dfoiy9rn5/video/upload/f_auto,q_auto/v1781897809/previewGoodustV2_nko8jc"
+            src="https://res.cloudinary.com/dfoiy9rn5/video/upload/v1783456926/devForge_grgbqi"
             type="video/mp4"
           />
           Your browser does not support the video tag.

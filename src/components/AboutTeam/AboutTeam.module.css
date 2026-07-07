@@ -94,6 +94,18 @@
   margin-bottom: 20px;
 }
 
+.link {
+  color: var(--secondary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.link:hover {
+  opacity: 0.8;
+  color: var(--border-divider);
+}
+
 .aboutUsFeatures {
   display: grid;
   grid-template-columns: max-content max-content;

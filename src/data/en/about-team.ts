@@ -3,6 +3,11 @@ export const aboutTeam = {
   imageLeftText2: 'Our Journey Began',
   subTitle: 'Who We Are',
   title: ' Every Great Team - Starts With A Story',
+  descriptionStart:
+    'DevForge is a student team`s of aspiring software engineers brought together by ',
+  descriptionLink: 'Neoversity',
+  descriptionEnd:
+    '. Although we come from different backgrounds, we share the same ambition—to learn, collaborate, and build meaningful digital products. This project tells the story of who we are, what drives us, and how we`re growing together as a team.',
   description:
     'DevForge is a student team`s of aspiring software engineers brought together by Neoversity. Although we come from different backgrounds, we share the same ambition—to learn, collaborate, and build meaningful digital products. This project tells the story of who we are, what drives us, and how we`re growing together as a team.',
   description2:

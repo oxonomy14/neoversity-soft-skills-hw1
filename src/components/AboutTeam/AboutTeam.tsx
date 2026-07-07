@@ -12,6 +12,9 @@ type AboutTeamProps = {
     title: string;
     subTitle: string;
     description: string;
+    descriptionStart: string;
+    descriptionLink: string;
+    descriptionEnd: string;
     description2: string;
     button: string;
     aboutUsFeature: string;
@@ -50,7 +53,18 @@ export default function AboutTeam({ data, locale }: AboutTeamProps) {
           <div className={css.textWrapper}>
             <p className={css.whoWeAre}>[ {data.subTitle} ]</p>
             <h2 className={css.aboutUsTitle}>{data.title}</h2>
-            <p className={css.aboutUsDescription}>{data.description}</p>
+            <p className={css.aboutUsDescription}>
+              {data.descriptionStart}
+              <Link
+                href="https://neoversity.com.ua"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={css.link}
+              >
+                {data.descriptionLink}
+              </Link>
+              {data.descriptionEnd}
+            </p>
             <p className={css.aboutUsDescription}>{data.description2}</p>
             <ul className={css.aboutUsFeatures}>
               <li className={css.aboutUsFeature}>{data.aboutUsFeature}</li>

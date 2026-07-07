@@ -95,14 +95,27 @@ export default function Superpowers({ data }: SuperpowersProps) {
             </ul>
           </div>
           <div className={css.imageWrapper}>
-            <Image
+            {/*        <Image
               src="/images/superpowers.webp"
               alt="our experience"
               width={600}
               height={458}
               className={css.image}
               loading="eager"
-            />
+            /> */}
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              className={css.video}
+            >
+              <source
+                src="https://res.cloudinary.com/dfoiy9rn5/video/upload/v1783456926/devForge_grgbqi"
+                type="video/mp4"
+              />
+            </video>
           </div>
         </div>
       </Container>

@@ -4,7 +4,6 @@ import Container from '../Container/Container';
 import css from './PromoBanner.module.css';
 import { useState } from 'react';
 import VideoModal from '../VideoModal/VideoModal';
-import Link from 'next/link';
 
 type PromoBannerProps = {
   data: {
@@ -28,7 +27,7 @@ export default function PromoBanner({ data }: PromoBannerProps) {
           </div>
           <div className={css.btnWrapper}>
             <button
-              onClick={() => alert('Video modal is not implemented yet.')}
+              onClick={() => setIsVideoOpen(true)}
               className={css.btnPlay}
             >
               <svg className={css.playIcon}>
