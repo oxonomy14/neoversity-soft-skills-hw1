@@ -1,0 +1,23 @@
+export const footer = {
+  footerDescription:
+    'DevForge — це спільнота майбутніх інженерів-програмістів, які навчаються в Neoversity, спільно створюють проєкти та розвиваються разом. Завдяки командній роботі, реальним проєктам і постійній практиці ми перетворюємо знання на досвід і готуємося до успішної кар’єри в ІТ.',
+  footerSocialContactTitle: 'Слідкуйте за нашим шляхом',
+  footerMenuTitle: 'Корисні посилання',
+  footerMenuItem: 'Політика конфіденційності',
+  footerMenuItem2: 'Умови використання',
+  footerMenuItem3: 'Політика використання файлів cookie',
+  footerMenuItem4: 'Блог',
+  footerMenuTitle2: 'DevForge',
+  footerMenuItem5: 'Про команду',
+  footerMenuItem6: 'Учасники команди',
+  footerMenuItem7: 'Суперсили команди',
+  footerMenuItem8: 'Бачення майбутнього',
+  footerMenuTitle3: 'Зв’яжіться з нами',
+  footerMenuContactTitle: 'Контакти команди',
+  footerMenuContactTitle2: 'Електронна пошта',
+  footerMenuContactTitle3: 'Напишіть нам',
+  footerCopyright: 'Навчаємося. Створюємо. Зростаємо разом.',
+  navigationFooterItem: 'Умови використання',
+  navigationFooterItem2: 'Політика конфіденційності',
+  navigationFooterItem3: 'Політика використання файлів cookie',
+};

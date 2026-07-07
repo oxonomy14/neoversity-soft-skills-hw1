@@ -1,7 +1,7 @@
 .footerContent {
-  padding: 80px 0px 0px;
+  padding: 80px 0px 80px;
   background-color: var(--primary);
-  height: 398px;
+  height: 100%;
 }
 
 .footerContentWrapper {

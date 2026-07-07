@@ -1,6 +1,5 @@
 'use client';
 
-
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import type { LocaleProps } from '@/types/types';
@@ -15,7 +14,7 @@ export default function LayoutShell({ children, locale }: LayoutShellProps) {
     <>
       <Header locale={locale} />
       <main>{children}</main>
-      <Footer  />
+      <Footer locale={locale} />
     </>
   );
 }

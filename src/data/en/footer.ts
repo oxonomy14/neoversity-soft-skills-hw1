@@ -1,0 +1,23 @@
+export const footer = {
+  footerDescription:
+    'DevForge is a community of aspiring software engineers learning at the Neoversity, building, and growing together. Through collaboration, real projects, and continuous practice, we turn knowledge into experience and prepare for successful careers in tech.',
+  footerSocialContactTitle: 'Follow Our Journey',
+  footerMenuTitle: 'Useful Link',
+  footerMenuItem: 'Privacy Policy',
+  footerMenuItem2: 'Terms of Service',
+  footerMenuItem3: 'Cookie Policy',
+  footerMenuItem4: 'Blog',
+  footerMenuTitle2: 'DevForge',
+  footerMenuItem5: 'About Team',
+  footerMenuItem6: 'Team Members',
+  footerMenuItem7: 'Team Superpowers',
+  footerMenuItem8: 'Future Vision',
+  footerMenuTitle3: 'Contact Us',
+  footerMenuContactTitle: 'Team Contact',
+  footerMenuContactTitle2: 'Email',
+  footerMenuContactTitle3: 'Chat Us',
+  footerCopyright: 'Learning. Building.Growing Together.',
+  navigationFooterItem: 'Terms & Conditions',
+  navigationFooterItem2: 'Privacy Policy',
+  navigationFooterItem3: 'Cookie Policy',
+};

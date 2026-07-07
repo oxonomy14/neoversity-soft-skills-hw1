@@ -4,8 +4,12 @@ import NavigationFooter from '../NavigationFooter/NavigationFooter';
 import Image from 'next/image';
 import Link from 'next/link';
 import css from './Footer.module.css';
+import { LocaleProps } from '@/types/types';
+import { getDictionary } from '@/lib/getDictionary';
 
-export default function Footer() {
+export default function Footer({ locale }: LocaleProps) {
+  const dictionary = getDictionary(locale);
+  const prefix = locale === 'uk' ? 'uk' : '';
   return (
     <footer className={css.footer}>
       <div className={css.footerContent}>
@@ -20,13 +24,11 @@ export default function Footer() {
                 className={css.footerLogo}
               />
               <p className={css.footerDescription}>
-                DevForge is a community of aspiring software engineers learning
-                at the Neoversity, building, and growing together. Through
-                collaboration, real projects, and continuous practice, we turn
-                knowledge into experience and prepare for successful careers in
-                tech.
+                {dictionary.footer.footerDescription}
               </p>
-              <p className={css.footerSocialContactTitle}>Follow Our Journey</p>
+              <p className={css.footerSocialContactTitle}>
+                {dictionary.footer.footerSocialContactTitle}
+              </p>
 
               <ul className={css.footerSocialList}>
                 <li className={css.footerSocialItem}>
@@ -81,44 +83,66 @@ export default function Footer() {
             </div>
             <div className={css.footerMenu}>
               <div>
-                <h3 className={css.footerMenuTitle}>Useful Link</h3>
+                <h3 className={css.footerMenuTitle}>
+                  {dictionary.footer.footerMenuTitle}
+                </h3>
 
                 <ul className={css.footerMenuList}>
                   <li className={css.footerMenuItem}>
-                    <Link href="/">Privacy Policy</Link>
+                    <Link href={`/${prefix}`}>
+                      {dictionary.footer.footerMenuItem}
+                    </Link>
                   </li>
                   <li className={css.footerMenuItem}>
-                    <Link href="/">Terms & Conditions</Link>
+                    <Link href={`/${prefix}`}>
+                      {dictionary.footer.footerMenuItem2}
+                    </Link>
                   </li>
                   <li className={css.footerMenuItem}>
-                    <Link href="/">Cookie Policy</Link>
+                    <Link href={`/${prefix}`}>
+                      {dictionary.footer.footerMenuItem3}
+                    </Link>
                   </li>
 
                   <li className={css.footerMenuItem}>
-                    <Link href="/blog">Blog</Link>
+                    <Link href={`/${prefix}/blog`}>
+                      {dictionary.footer.footerMenuItem4}
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div>
-                <h3 className={css.footerMenuTitle}>DevForge</h3>
+                <h3 className={css.footerMenuTitle}>
+                  {dictionary.footer.footerMenuTitle2}
+                </h3>
 
                 <ul className={css.footerMenuList}>
                   <li className={css.footerMenuItem}>
-                    <Link href="/#about-team">About Team</Link>
+                    <Link href={`/${prefix}#about-team`}>
+                      {dictionary.footer.footerMenuItem5}
+                    </Link>
                   </li>
                   <li className={css.footerMenuItem}>
-                    <Link href="/#team-members">Team Members</Link>
+                    <Link href={`/${prefix}#team-members`}>
+                      {dictionary.footer.footerMenuItem6}
+                    </Link>
                   </li>
                   <li className={css.footerMenuItem}>
-                    <Link href="/#team-superpowers">Team Superpowers</Link>
+                    <Link href={`/${prefix}#team-superpowers`}>
+                      {dictionary.footer.footerMenuItem7}
+                    </Link>
                   </li>
                   <li className={css.footerMenuItem}>
-                    <Link href="/#future-vision">Future Vision</Link>
+                    <Link href={`/${prefix}#future-vision`}>
+                      {dictionary.footer.footerMenuItem8}
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div>
-                <h3 className={css.footerMenuTitle}>Contact Us</h3>
+                <h3 className={css.footerMenuTitle}>
+                  {dictionary.footer.footerMenuTitle3}
+                </h3>
 
                 <ul className={css.footerMenuContactList}>
                   <li className={css.footerMenuContactItem}>
@@ -130,7 +154,7 @@ export default function Footer() {
                       </div>
                       <div>
                         <p className={css.footerMenuContactTitle}>
-                          Team Contact
+                          {dictionary.footer.footerMenuContactTitle}
                         </p>
                         <p className={css.footerMenuContactDescription}>
                           +66 (80) 567-89-10
@@ -146,7 +170,9 @@ export default function Footer() {
                         </svg>
                       </div>
                       <div>
-                        <p className={css.footerMenuContactTitle}>Email</p>
+                        <p className={css.footerMenuContactTitle}>
+                          {dictionary.footer.footerMenuContactTitle2}
+                        </p>
                         <p className={css.footerMenuContactDescription}>
                           hello@devforge.demo
                         </p>
@@ -161,7 +187,9 @@ export default function Footer() {
                         </svg>
                       </div>
                       <div>
-                        <p className={css.footerMenuContactTitle}>Chat Us</p>
+                        <p className={css.footerMenuContactTitle}>
+                          {dictionary.footer.footerMenuContactTitle3}
+                        </p>
                         <p className={css.footerMenuContactDescription}>
                           +66 (80) 567-89-12
                         </p>
@@ -178,11 +206,11 @@ export default function Footer() {
         <Container>
           <div className={css.footerBottomContent}>
             <p className={css.footerCopyright}>
-              &copy; {new Date().getFullYear()} DevForge - Learning. Building.
-              Growing Together.
+              &copy; {new Date().getFullYear()} DevForge -{' '}
+              {dictionary.footer.footerCopyright}
             </p>
             <div className={css.footerNavigation}>
-              <NavigationFooter />
+              <NavigationFooter data={dictionary.footer} locale={Locale} />
               <ButtonUp />
             </div>
           </div>
