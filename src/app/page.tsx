@@ -59,7 +59,7 @@ export default function Home() {
         cardMembers={dictionary.cardMembers}
         data={dictionary.teamMembers}
       />
-      <Superpowers />
+      <Superpowers data={dictionary.superpowers} />
       <Future />
     </LayoutShell>
   );

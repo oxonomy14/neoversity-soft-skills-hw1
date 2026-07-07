@@ -2,14 +2,31 @@ import Container from '../Container/Container';
 import css from './Superpowers.module.css';
 import Image from 'next/image';
 
-export default function Superpowers() {
+type SuperpowersProps = {
+  data: {
+    title: string;
+    subTitle: string;
+    description: string;
+    description2: string;
+    progressLabel: string;
+    progressValue: string;
+    progressLabel2: string;
+    progressValue2: string;
+    progressLabel3: string;
+    progressValue3: string;
+    progressLabel4: string;
+    progressValue4: string;
+  };
+};
+
+export default function Superpowers({ data }: SuperpowersProps) {
   return (
     <section className={css.sectionStatistics} id="team-superpowers">
       <Container>
         <div className={css.contentWrapper}>
           <div className={css.content}>
-            <p className={css.subTitle}>[ OUR SUPERPOWERS ]</p>
-            <h2 className={css.title}>Skills That Make Our Team Strong</h2>
+            <p className={css.subTitle}>[ {data.subTitle} ]</p>
+            <h2 className={css.title}>{data.title}</h2>
             <p className={css.description}>
               Every member of DevForge brings unique strengths to the team.
               Together, we combine technical expertise, creativity,
@@ -29,8 +46,11 @@ export default function Superpowers() {
                   <span className={css.label}>Frontend Development </span>
 
                   <div className={css.progressBar}>
-                    <div className={css.progressFill} style={{ width: '93%' }}>
-                      <span className={css.percent}>93%</span>
+                    <div
+                      className={css.progressFill}
+                      style={{ width: `${data.progressValue}%` }}
+                    >
+                      <span className={css.percent}>{data.progressValue}%</span>
                     </div>
                   </div>
                 </div>
@@ -40,8 +60,13 @@ export default function Superpowers() {
                   <span className={css.label}>AI Integration</span>
 
                   <div className={css.progressBar}>
-                    <div className={css.progressFill} style={{ width: '88%' }}>
-                      <span className={css.percent}>88%</span>
+                    <div
+                      className={css.progressFill}
+                      style={{ width: `${data.progressValue2}%` }}
+                    >
+                      <span className={css.percent}>
+                        {data.progressValue2}%
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -51,8 +76,13 @@ export default function Superpowers() {
                   <span className={css.label}>Team Collaboration</span>
 
                   <div className={css.progressBar}>
-                    <div className={css.progressFill} style={{ width: '71%' }}>
-                      <span className={css.percent}>71%</span>
+                    <div
+                      className={css.progressFill}
+                      style={{ width: `${data.progressValue3}%` }}
+                    >
+                      <span className={css.percent}>
+                        {data.progressValue3}%
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -62,8 +92,13 @@ export default function Superpowers() {
                   <span className={css.label}>Problem Solving </span>
 
                   <div className={css.progressBar}>
-                    <div className={css.progressFill} style={{ width: '75%' }}>
-                      <span className={css.percent}>75%</span>
+                    <div
+                      className={css.progressFill}
+                      style={{ width: `${data.progressValue4}%` }}
+                    >
+                      <span className={css.percent}>
+                        {data.progressValue4}%
+                      </span>
                     </div>
                   </div>
                 </div>
