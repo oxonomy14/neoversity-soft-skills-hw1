@@ -1,18 +1,31 @@
 import Container from '../Container/Container';
 import css from './Future.module.css';
 
-export default function Future() {
+type FutureProps = {
+  data: {
+    subTitle: string;
+    title: string;
+    description: string;
+    itemSubTitle: string;
+    itemTitle: string;
+    itemText: string;
+    itemSubTitle2: string;
+    itemTitle2: string;
+    itemText2: string;
+    itemSubTitle3: string;
+    itemTitle3: string;
+    itemText3: string;
+  };
+};
+
+export default function Future({ data }: FutureProps) {
   return (
     <section className={css.sectionWrapper} id="future-vision">
       <Container>
         <div className={css.content}>
-          <p className={css.subTitle}>[ OUR FUTURE ]</p>
-          <h2 className={css.title}>Our Vision Beyond Neoversity</h2>
-          <p className={css.description}>
-            We see DevForge as more than a student team. Every project,
-            collaboration, and challenge helps us grow into confident software
-            engineers ready to create products that make a real impact.
-          </p>
+          <p className={css.subTitle}>[ {data.subTitle} ]</p>
+          <h2 className={css.title}>{data.title}</h2>
+          <p className={css.description}>{data.description}</p>
         </div>
         <div className={css.steps}>
           <div className={css.stepItem}>
@@ -33,28 +46,19 @@ export default function Future() {
         </div>
         <ul className={css.list}>
           <li className={css.item}>
-            <p className={css.itemSubTitle}>Learn</p>
-            <h3 className={css.itemTitle}>Learning Together</h3>
-            <p className={css.itemText}>
-              Master modern technologies, strengthen our engineering mindset,
-              and never stop improving.
-            </p>
+            <p className={css.itemSubTitle}>{data.itemSubTitle}</p>
+            <h3 className={css.itemTitle}>{data.itemTitle}</h3>
+            <p className={css.itemText}>{data.itemText}</p>
           </li>
           <li className={css.item}>
-            <p className={css.itemSubTitle}>Build</p>
-            <h3 className={css.itemTitle}>Building Together</h3>
-            <p className={css.itemText}>
-              Turn ideas into products through teamwork, creativity, and
-              practical experience.
-            </p>
+            <p className={css.itemSubTitle}>{data.itemSubTitle2}</p>
+            <h3 className={css.itemTitle}>{data.itemTitle2}</h3>
+            <p className={css.itemText}>{data.itemText2}</p>
           </li>
           <li className={css.item}>
-            <p className={css.itemSubTitle}>Lead</p>
-            <h3 className={css.itemTitle}>Growing Together</h3>
-            <p className={css.itemText}>
-              Start successful careers, create innovative solutions, and inspire
-              the next generation of developers.
-            </p>
+            <p className={css.itemSubTitle}>{data.itemSubTitle3}</p>
+            <h3 className={css.itemTitle}>{data.itemTitle3}</h3>
+            <p className={css.itemText}>{data.itemText3}</p>
           </li>
         </ul>
       </Container>

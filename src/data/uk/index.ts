@@ -8,6 +8,7 @@ import { header } from './header';
 import { navigation } from './navigation';
 import { promoBanner } from './promo-banner';
 import { superpowers } from './superpowers';
+import { future } from './future';
 
 export const dictionary = {
   header,
@@ -18,4 +19,5 @@ export const dictionary = {
   teamMembers,
   cardMembers,
   superpowers,
+  future,
 };

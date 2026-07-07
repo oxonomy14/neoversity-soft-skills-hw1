@@ -61,7 +61,7 @@ export default function Home() {
         data={dictionary.teamMembers}
       />
       <Superpowers data={dictionary.superpowers} />
-      <Future />
+      <Future data={dictionary.future} />
     </LayoutShell>
   );
 }
