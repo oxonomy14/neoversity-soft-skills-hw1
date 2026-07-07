@@ -157,7 +157,7 @@ export default function Footer({ locale }: LocaleProps) {
                           {dictionary.footer.footerMenuContactTitle}
                         </p>
                         <p className={css.footerMenuContactDescription}>
-                          +66 (80) 567-89-10
+                          +66 (80) xxx-xx-xx
                         </p>
                       </div>
                     </div>
@@ -191,7 +191,7 @@ export default function Footer({ locale }: LocaleProps) {
                           {dictionary.footer.footerMenuContactTitle3}
                         </p>
                         <p className={css.footerMenuContactDescription}>
-                          +66 (80) 567-89-12
+                          +66 (80) xxx-xx-xx
                         </p>
                       </div>
                     </div>
