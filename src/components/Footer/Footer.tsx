@@ -210,7 +210,7 @@ export default function Footer({ locale }: LocaleProps) {
               {dictionary.footer.footerCopyright}
             </p>
             <div className={css.footerNavigation}>
-              <NavigationFooter data={dictionary.footer} locale={Locale} />
+              <NavigationFooter data={dictionary.footer} locale={locale} />
               <ButtonUp />
             </div>
           </div>
