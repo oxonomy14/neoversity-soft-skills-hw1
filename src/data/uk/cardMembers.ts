@@ -54,7 +54,7 @@ export const cardMembers = [
     future:
       'Після завершення навчання я бачу себе в великій ІТ-компанії в Італії або Україні, де зможу розвиватися як Front-end Developer і працювати над масштабними проєктами.',
 
-    linkedin: '',
-    github: '',
+    linkedin: 'https://www.linkedin.com/in/nazarii-yankoshchuk/',
+    github: 'https://github.com/nazarko345',
   },
 ];

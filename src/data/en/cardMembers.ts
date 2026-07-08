@@ -61,7 +61,7 @@ export const cardMembers = [
     future:
       'After completing my studies, I see myself working in a large IT company in Italy or Ukraine, where I can develop as a Front-end Developer and work on large-scale projects.',
 
-    linkedin: '',
-    github: '',
+    linkedin: 'https://www.linkedin.com/in/nazarii-yankoshchuk/',
+    github: 'https://github.com/nazarko345',
   },
 ];

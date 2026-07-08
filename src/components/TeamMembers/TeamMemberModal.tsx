@@ -4,6 +4,7 @@ import css from './TeamMemberModal.module.css';
 import { useEffect } from 'react';
 import { TeamMember } from '@/types/teamMember.types';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type TeamMemberModalProps = {
   isOpen: boolean;
@@ -59,9 +60,23 @@ export default function TeamMemberModal({
 
               <p className={css.shortDescription}>{member.shortDescription}</p>
 
-              <div className={css.links}>
-                <a href={member.github}>GitHub</a>
-                <a href={member.linkedin}>LinkedIn</a>
+              <div className={css.linksWrapper}>
+                <Link
+                  href={`${member.github}`}
+                  className={css.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </Link>
+                <Link
+                  href={`${member.linkedin}`}
+                  className={css.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </Link>
               </div>
             </aside>
 
