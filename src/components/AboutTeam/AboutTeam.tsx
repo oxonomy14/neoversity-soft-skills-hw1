@@ -72,7 +72,7 @@ export default function AboutTeam({ data, locale }: AboutTeamProps) {
               <li className={css.aboutUsFeature}>{data.aboutUsFeature3}</li>
               <li className={css.aboutUsFeature}>{data.aboutUsFeature4}</li>
             </ul>
-            <Link className={css.btn} href={`/${prefix}#team-members`}>
+            <Link className={css.btn} href={`/${prefix}#team-superpowers`}>
               {data.button}
             </Link>
           </div>
