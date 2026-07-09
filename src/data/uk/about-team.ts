@@ -1,5 +1,5 @@
 export const aboutTeam = {
-  imageLeftText: '2006',
+  imageLeftText: '2026',
   imageLeftText2: 'Початок нашої історії',
   subTitle: 'Хто ми',
   title: 'Кожна сильна команда — починається з історії',
